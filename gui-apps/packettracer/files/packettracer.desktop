@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Packet Tracer
+Comment=Cisco Packet Tracer, an innovative simulation and visualization tool, helps you to practice ne>
+
+Type=Application
+Icon=/opt/pt/art/app.png
+Exec=/usr/bin/packettracer
