@@ -10,7 +10,7 @@ LICENSE="Cisco"
 SLOT="0"
 KEYWORDS="~amd64"
 IUSE=""
-RESTRICT="mirror strip"
+RESTRICT="fetch mirror strip"
 
 S=${WORKDIR}
 
