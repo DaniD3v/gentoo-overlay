@@ -9,7 +9,6 @@ SRC_URI="CiscoPacketTracer_821_Ubuntu_64bit.deb"
 LICENSE="Cisco"
 SLOT="0"
 KEYWORDS="~amd64"
-IUSE=""
 RESTRICT="fetch mirror strip"
 
 S=${WORKDIR}

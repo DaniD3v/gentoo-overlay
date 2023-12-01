@@ -6,7 +6,7 @@ SRC_URI="https://download-cdn.jetbrains.com/toolbox/${P}.tar.gz"
 
 LICENSE="jetbrains"
 SLOT="0"
-KEYWORDS="-*"
+KEYWORDS="~amd64"
 RESTRICT="strip"
 
 RDEPEND="sys-fs/fuse"
