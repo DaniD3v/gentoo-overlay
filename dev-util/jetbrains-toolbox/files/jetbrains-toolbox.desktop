@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Jetbrains Toolbox
+Icon=/opt/jetbrains-toolbox/icon.svg
+
+Exec=/opt/jetbrains-toolbox/jetbrains-toolbox
+Type=Application
+Categories=Development
