@@ -6,7 +6,7 @@ DESCRIPTION="Cisco's packet tracer"
 HOMEPAGE="https://www.netacad.com/portal/resources/packet-tracer"
 SRC_URI="CiscoPacketTracer_821_Ubuntu_64bit.deb"
 
-LICENSE="Cisco"
+LICENSE="packettracer"
 SLOT="0"
 KEYWORDS="~amd64"
 RESTRICT="fetch mirror strip"
