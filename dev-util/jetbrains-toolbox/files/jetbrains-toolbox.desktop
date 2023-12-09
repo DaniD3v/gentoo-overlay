@@ -1,7 +1,9 @@
 [Desktop Entry]
-Name=Jetbrains Toolbox
-Icon=/opt/jetbrains-toolbox/icon.svg
-
-Exec=/opt/jetbrains-toolbox/jetbrains-toolbox
 Type=Application
-Categories=Development
+Name=JetBrains Toolbox
+Exec=jetbrains-toolbox
+Icon=jetbrains-toolbox
+StartupNotify=false
+Terminal=false
+MimeType=x-scheme-handler/jetbrains;
+X-AppImage-Integrate=false

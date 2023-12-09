@@ -1,24 +1,31 @@
-EAPI=7
+EAPI=8
+
+inherit desktop xdg
 
 DESCRIPTION="Manage all your JetBrains Projects and Tools"
 HOMEPAGE="https://www.jetbrains.com/toolbox/"
 SRC_URI="https://download-cdn.jetbrains.com/toolbox/${P}.tar.gz"
 
-LICENSE="jetbrains"
+LICENSE="JetBrains-individual"
 SLOT="0"
 KEYWORDS="~amd64"
 RESTRICT="strip"
 
-RDEPEND="sys-fs/fuse"
-DEPEND=""
+RDEPEND="sys-fs/fuse:0"
 
 src_install() {
-    exeinto /opt/jetbrains-toolbox
-    doexe ${WORKDIR}/${P}/jetbrains-toolbox
+    dobin ${WORKDIR}/${P}/jetbrains-toolbox
 
-    insinto /opt/jetbrains-toolbox
-    doins ${FILESDIR}/icon.svg
+    domenu ${FILESDIR}/jetbrains-toolbox.desktop
+    doicon -s scalable ${FILESDIR}/jetbrains-toolbox.svg
+}
 
-    insinto /usr/share/applications
-    doins ${FILESDIR}/jetbrains-toolbox.desktop
+pkg_postinst() {
+    xdg_desktop_database_update
+    xdg_icon_cache_update
+}
+
+pkg_postrm() {
+    xdg_desktop_database_update
+    xdg_icon_cache_update
 }
