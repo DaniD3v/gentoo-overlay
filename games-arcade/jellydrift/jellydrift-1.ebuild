@@ -8,7 +8,7 @@ SRC_URI="https://github.com/DaniD3v/aur-files/raw/main/JellyDrift.tar.xz"
 
 LICENSE="@FREE"
 SLOT="0"
-KEYWORDS="~amd64"
+KEYWORDS="-* ~amd64"
 RESTRICT="strip"
 
 S="${WORKDIR}/JellyDrift"

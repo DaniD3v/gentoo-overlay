@@ -8,7 +8,7 @@ SRC_URI="https://download-cdn.jetbrains.com/toolbox/${P}.tar.gz"
 
 LICENSE="JetBrains-individual"
 SLOT="0"
-KEYWORDS="~amd64"
+KEYWORDS="-* ~amd64"
 RESTRICT="strip"
 
 RDEPEND="sys-fs/fuse:0"

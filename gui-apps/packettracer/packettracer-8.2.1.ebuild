@@ -8,19 +8,19 @@ SRC_URI="CiscoPacketTracer_821_Ubuntu_64bit.deb"
 
 LICENSE="packettracer"
 SLOT="0"
-KEYWORDS="~amd64"
+KEYWORDS="-* ~amd64"
 RESTRICT="fetch mirror strip"
 
 S=${WORKDIR}
 
 pkg_nofetch(){
 	ewarn "To install this package, you need a Cisco account."
-        ewarn "You can download the packettracer file from"
+    ewarn "You can download the packettracer file from"
 	ewarn "${HOMEPAGE}."
-        ewarn "Download the packettracer binary named"
+    ewarn "Download the packettracer binary named"
 	ewarn "\"${A}\" and move it to your DISTDIR directory."
-        ewarn "(most likely /var/cache/distfiles)."
-        ewarn "Finally, proceed with the installation."
+    ewarn "(most likely /var/cache/distfiles)."
+    ewarn "Finally, proceed with the installation."
 }
 
 src_install(){
