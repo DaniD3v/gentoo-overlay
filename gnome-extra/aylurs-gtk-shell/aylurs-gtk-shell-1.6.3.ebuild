@@ -20,7 +20,7 @@ SRC_URI="
 
 BDEPEND="
 	dev-lang/typescript
-	>=dev-util/meson-0.62.0
+	>=dev-build/meson-0.62.0
 "
 
 DEPEND="
