@@ -18,16 +18,24 @@ SRC_URI="
 	https://raw.githubusercontent.com/DaniD3v/pkg-files/main/gentoo/AGS-nodemodules.tar.gz
 "
 
-BDEPEND="
-	dev-lang/typescript
-	>=dev-build/meson-0.62.0
-"
-
 DEPEND="
 	dev-libs/glib:2
 	>=dev-libs/gobject-introspection-1.49.1
 	>=dev-libs/gjs-1.73.1
 	x11-libs/gtk+:3
+"
+
+BDEPEND="
+	${DEPEND}
+
+	dev-lang/typescript
+	>=dev-build/meson-0.62.0
+"
+
+DEPEND="
+	${DEPEND}
+
+	gui-libs/gtk-layer-shell[introspection]
 
 	bluetooth? ( net-wireless/gnome-bluetooth )
 	battery? ( sys-power/upower )
