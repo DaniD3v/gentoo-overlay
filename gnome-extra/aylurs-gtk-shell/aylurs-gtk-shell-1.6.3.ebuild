@@ -32,7 +32,7 @@ BDEPEND="
 	>=dev-build/meson-0.62.0
 "
 
-DEPEND="
+RDEPEND="
 	${DEPEND}
 
 	gui-libs/gtk-layer-shell[introspection]
